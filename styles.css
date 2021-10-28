@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Frank Ruhl Libre', serif;
+    font-family: 'Zen Antique Soft', serif;
+}
+
+/*=====BACKGROUND/BODY=====*/
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(resources/BG/BackgroundGallery.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+/*=====NAVIGATION BAR=====*/
+
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul li{
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li a:hover{
+    color: yellow;
+}
+
+.logo{
+    width: 200px;
+    cursor: pointer;
+}
+
+
+/*=====CONTENT/BODY [HOME]=====*/
+
+.content{
+    width: 40%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 30%;
+    text-align: center;
+    color: white;
+}
+
+.content h1{
+    font-size: 80px;
+    margin-top: 80px; 
+    font-weight: normal;
+}
+
+.content a{
+    text-decoration: none;
+    color: white;
+}
+
+.content h1:hover{
+    transform: scale(115%);
+    color: yellow;
+}
+
+/*=====GALLERY=====*/
+
+.photogallery{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 5% 10%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,300px)); 
+    column-gap: 25px;
+    grid-row-gap: 25px;
+}
+
+.photogallery img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/*=====GALLERY OVERLAYS=====*/
+
+.image_overlay1{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    height: 300px;
+    background: rgba(0,0,0,.75);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.image_overlay2{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    height: 300px;
+    background: rgba(0,0,0,.75);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.image_overlay3{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    height: 300px;
+    background: rgba(0,0,0,.75);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.image_overlay4{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    height: 300px;
+    background: rgba(0,0,0,.75);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.image_overlay5{
+    position: absolute;
+    top: 325px;
+    bottom: 0;
+    width: 300px;
+    height: 300px;
+    background: rgba(0,0,0,.75);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.image_overlay6{
+    position: absolute;
+    top: 325px;
+    bottom: 0;
+    width: 300px;
+    height: 300px;
+    background: rgba(0,0,0,.75);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.image_overlay7{
+    position: absolute;
+    top: 325px;
+    bottom: 0;
+    width: 300px;
+    height: 300px;
+    background: rgba(0,0,0,.75);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.image_overlay8{
+    position: absolute;
+    top: 325px;
+    bottom: 0;
+    width: 300px;
+    height: 300px;
+    background: rgba(0,0,0,.75);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+.image_overlay1:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.image_overlay2:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.image_overlay3:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.image_overlay4:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.image_overlay5:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.image_overlay6:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.image_overlay7:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.image_overlay8:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.image_title{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.image_description{
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+/*=====ABOUT CONTENT=====*/
+ 
+.wrapper{
+    display: flex;
+    text-align: center;
+    color: white;
+}
+
+.wrapper a{
+    color: white;
+    font-size: 50px;
+}
+
+.about_content{
+    /*background-color: gold; <-----Prueba del bg*/
+    width: 30%;
+    margin-top: 15%;
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+.contact{
+    /*background-color: rebeccapurple; <-----Prueba del bg*/ 
+    width: 30%;
+    margin-top: 15%;
+    margin-right: 15%;
+}
+
+.redes a{
+    padding-right: 25px;
+}
+
+.redes a:hover{
+    color: yellow;
+}
+
+@media only screen and (max-width: 800px){
+    .wrapper{
+        display: block;
+    }
+    
+    .about_content{
+        width: 100%;
+        box-sizing: border-box;
+        margin-left: 0;
+    }
+    
+     .contact{
+        width: 100%;
+        box-sizing: border-box;
+        margin-right: 0;
+    }
+}
+
+/*=====RESERVE CONTENT=====*/
+
+.reserve_container{
+    padding-top: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding-bottom: 60px;
+    color: white;
+}
+
+/*=====RESERVE STYLES=====*/
+
+form{
+    text-align:center;
+}
+
+form .box{
+    width: 100%;
+    height: 35px;
+    border: 0;
+    border-radius: 25px;   
+    text-align: center;
+}
+
+form #location_options{
+    width: 100%;
+    height: 35px;
+    border: 0;
+    border-radius: 25px;
+    text-align: center;
+}
+
+form #seats{
+    width: 100%;
+    height: 35px;
+    border: 0;
+    border-radius: 25px;
+    text-align: center;
+}
+
+form #date{
+    width: 100%;
+    height: 35px;
+    border: 0;
+    text-align: center;
+}
+
+form #button{
+    background-color: #f1f1f1;
+    width: 150px;
+    height: 35px;
+    border: 0;
+    border-radius: 25px;
+    text-align: center;
+}
+
+#location_options:hover{
+    cursor: pointer;
+}
+
+#button:hover{
+    cursor: pointer;
+}
+
+form{
+    width: 350px;
+}
